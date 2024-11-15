@@ -18,8 +18,8 @@ describe("Application", () => {
     const nameElement = screen.getByRole("textbox", { name: /name/i });
     expect(nameElement).toBeInTheDocument();
 
-    const nameElement2 = screen.getByLabelText(/name/i);
-    expect(nameElement2).toBeInTheDocument();
+    const nameElement3 = screen.getByPlaceholderText(/fullname/i);
+    expect(nameElement3).toBeInTheDocument();
 
     const bioElement = screen.getByRole("textbox", { name: /bio/i });
     expect(bioElement).toBeInTheDocument();
