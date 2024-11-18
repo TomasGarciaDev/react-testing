@@ -1,10 +1,11 @@
 import "./App.css";
-import { Application } from "./components/application/Application";
+import { Skills } from "./components/Skills.tsx/Skills";
 
 function App() {
+  const skills = ["HTML", "CSS", "JavaScript"];
   return (
     <div className='App'>
-      <Application />
+      <Skills skills={skills} />
     </div>
   );
 }
