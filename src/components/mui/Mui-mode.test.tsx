@@ -1,11 +1,8 @@
-import { screen, render } from "@testing-library/react";
+import { screen, render } from "../../test-utils";
 import { MuiMode } from "./Mui-mode";
-import { AppProviders } from "../../providers/app-providers";
 
 beforeEach(() => {
-  render(<MuiMode />, {
-    wrapper: AppProviders,
-  });
+  render(<MuiMode />);
 });
 
 describe("MuiMode", () => {
